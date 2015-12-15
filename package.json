@@ -1,0 +1,27 @@
+{
+  "name": "angular-fancytree",
+  "version": "1.0.0",
+  "description": "Quick fancytree directive",
+  "main": "dist/angular-fancytree.min.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tomasz-szymanek/angular-fancytree.git"
+  },
+  "keywords": [
+    "fancytree",
+    "directive",
+    "angular"
+  ],
+  "author": "Tomasz Szymanek",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tomasz-szymanek/angular-fancytree/issues"
+  },
+  "homepage": "https://github.com/tomasz-szymanek/angular-fancytree#readme"
+}

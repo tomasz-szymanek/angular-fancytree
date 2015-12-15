@@ -1,0 +1,14 @@
+{
+  "name": "angular-fancytree",
+  "description": "Quick fancytree directive",
+  "version": "0.0.0",
+  "homepage": "https://github.com/tomasz-szymanek/angular-fancytree",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "angular": "~1.4.0",
+    "jquery-ui": "~1.11.4",
+    "jquery": "~2.1.4",
+    "jquery.fancytree": "fancytree#~2.13.0"
+  }
+}
