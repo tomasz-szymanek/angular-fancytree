@@ -13,6 +13,15 @@ include it:
 <script src="bower_components/angular-fancytree/dist/angular-fancytree.min.js"></script>
 ```
 
+include dependencies:
+```
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script src="bower_components/jquery.fancytree/dist/jquery.fancytree.min.js"></script>
+<!-- your fav theme: -->
+<link rel="stylesheet" href="bower_components/jquery.fancytree/dist/skin-bootstrap-n/ui.fancytree.min.css">
+```
+
 use it:
 * in your controller (inject fancytreeFactory and set Your data):
 ```
