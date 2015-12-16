@@ -12,6 +12,17 @@ include it:
 ```
 <script src="bower_components/angular-fancytree/dist/angular-fancytree.min.js"></script>
 ```
+```
+(function() {
+    'use strict';
+
+    angular
+        .module('exampleApp', [
+            'angular-fancytree'
+        ]);
+})();
+```
+
 
 include dependencies:
 ```
