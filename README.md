@@ -62,7 +62,7 @@ use it:
 
 * in your template:
 ```
-<angular-fancytree></angular-fancytree>
+<fancytree></fancytree>
 ```
 
 I will be working on it, I promise!
