@@ -1,1 +1,20 @@
-<fancytree></fancytree>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <link rel="stylesheet" href="bower_components/jquery.fancytree/dist/skin-vista/ui.fancytree.min.css">
+</head>
+<body ng-app="angular-fancytree">
+<div ng-controller="ExampleController">
+    <fancytree debuglevel="0" id="nowe" checkbox="true" disabled="false"></fancytree>
+</div>
+
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script src="bower_components/jquery.fancytree/dist/jquery.fancytree.min.js"></script>
+<script src="dist/angular-fancytree.min.js"></script>
+<script src="example/example.controller.js"></script>
+</body>
+</html>
