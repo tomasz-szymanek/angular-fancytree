@@ -16,6 +16,11 @@ include it:
 ```
 <script src="bower_components/angular-fancytree/dist/angular-fancytree.min.js"></script>
 ```
+OR
+```
+<script src="bower_components/angular-fancytree/dist/angular-fancytree.min.js"></script>
+```
+add depedency to your app:
 ```
 (function() {
     'use strict';
