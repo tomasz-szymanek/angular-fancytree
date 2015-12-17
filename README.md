@@ -5,7 +5,7 @@ Simple angular directive for quick fancytree inclusion
 
 download it:
 ```
-bower install angular-fancytree
+bower install --save angular-fancytree
 ```
 OR
 ```
