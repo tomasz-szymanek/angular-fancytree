@@ -13,7 +13,6 @@
             template: '<div id="{{ id }}"></div>',
             restrict: 'EAC',
             scope: {
-                data: "=",
                 id: "@",
                 activevisible: "@",
                 aria: "@",
