@@ -44,7 +44,7 @@ include dependencies:
 ```
 
 use it:
-* in your controller (inject fancytreeFactory and set Your data):
+* in your controller or service (inject fancytreeFactory and set Your data):
 ```javascript
 (function () {
     'use strict';
