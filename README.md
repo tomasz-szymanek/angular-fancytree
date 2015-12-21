@@ -53,10 +53,10 @@ use it:
         .module('yourModule')
         .controller('ExampleController', ExampleController);
 
-    ExampleController.$inject = ['fancytreeFactory'];
+    ExampleController.$inject = ['$injector', 'fancytreeFactory'];
 
     /* @ngInject */
-    function ExampleController(fancytreeFactory) {
+    function ExampleController($injector, fancytreeFactory) {
 
         // Passing fancytree options
         // second arg is fancytree's element id
