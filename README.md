@@ -21,7 +21,7 @@ OR
 <script src="node_modules/angular-fancytree/dist/angular-fancytree.min.js"></script>
 ```
 add depedency to your app:
-```
+```javascript
 (function() {
     'use strict';
 
@@ -45,7 +45,7 @@ include dependencies:
 
 use it:
 * in your controller (inject fancytreeFactory and set Your data):
-```
+```javascript
 (function () {
     'use strict';
 
@@ -91,7 +91,7 @@ use it:
 * in your template (all attributes should be in lowercase
 f.e. instead of debugLevel it should be debuglevel):
 ```
-<fancytree disabled="false" checkbox="true" debuglevel="0"></fancytree>
+<fancytree id="exampleFancytree" disabled="false" checkbox="true" debuglevel="0"></fancytree>
 ```
 
 I will be working on it, I promise!
