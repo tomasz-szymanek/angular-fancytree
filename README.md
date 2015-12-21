@@ -4,20 +4,20 @@ Simple angular directive for quick fancytree inclusion
 # HOWTO
 
 download it:
-```
+```bash
 bower install --save angular-fancytree
 ```
 OR
-```
+```bash
 npm install --save angular-fancytree
 ```
 
 include it:
-```
+```html
 <script src="bower_components/angular-fancytree/dist/angular-fancytree.min.js"></script>
 ```
 OR
-```
+```html
 <script src="node_modules/angular-fancytree/dist/angular-fancytree.min.js"></script>
 ```
 add depedency to your app:
@@ -34,13 +34,13 @@ add depedency to your app:
 
 
 include dependencies:
-```
-<script src="bower_components/angular/angular.min.js"></script>
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
-<script src="bower_components/jquery.fancytree/dist/jquery.fancytree.min.js"></script>
+```html
+<script src="angular.min.js"></script>
+<script src="jquery.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="jquery.fancytree.min.js"></script>
 <!-- your fav theme: -->
-<link rel="stylesheet" href="bower_components/jquery.fancytree/dist/skin-bootstrap-n/ui.fancytree.min.css">
+<link rel="stylesheet" href="jquery.fancytree/dist/skin-bootstrap-n/ui.fancytree.min.css">
 ```
 
 use it:
@@ -90,7 +90,7 @@ use it:
 
 * in your template (all attributes should be in lowercase
 f.e. instead of debugLevel it should be debuglevel):
-```
+```html
 <fancytree id="exampleFancytree" disabled="false" checkbox="true" debuglevel="0"></fancytree>
 ```
 
