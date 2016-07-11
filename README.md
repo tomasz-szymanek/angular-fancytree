@@ -46,46 +46,39 @@ include dependencies:
 use it:
 * in your controller or service (inject fancytreeFactory and set Your data):
 ```javascript
-(function () {
-    'use strict';
+angular
+	.module('yourModule')
+	.controller('ExampleController', ['fancytreeFactory', function (fancytreeFactory) {
 
-    angular
-        .module('yourModule')
-        .controller('ExampleController', ExampleController);
+		// Passing fancytree options
+		// second arg is fancytree's element id
+		fancytreeFactory.setData([
+			{title: "Node 1", key: "1"},
+			{
+				title: "Folder 2", key: "2", folder: true, children: [
+				{title: "Node 2.1", key: "3", myOwnAttr: "abc"},
+				{title: "Node 2.2", key: "4"}
+			]
+			}
+		], 'exampleFancytree');
 
-    ExampleController.$inject = ['$injector', 'fancytreeFactory'];
+		// Passing json with data: "function_name" : callback
+		// second arg is fancytree's element id
+		fancytreeFactory.setMethods({
+			"select": function (event, data) {
+				// You should inject required services like that
+				var ExampleService = $injector.get('ExampleService');
+				var node = data.node;
 
-    /* @ngInject */
-    function ExampleController($injector, fancytreeFactory) {
+				if (node.isSelected()) {
+					ExampleService.doSomething(node.title);
+				} else {
+					ExampleService.doSomethingElse(node.title);
+				}
+			}
+		}, 'exampleFancytree');
+	}]);
 
-        // Passing fancytree options
-        // second arg is fancytree's element id
-        fancytreeFactory.setData([
-            {title: "Node 1", key: "1"},
-            {title: "Folder 2", key: "2", folder: true, children: [
-                {title: "Node 2.1", key: "3", myOwnAttr: "abc"},
-                {title: "Node 2.2", key: "4"}
-            ]}
-        ], 'exampleFancytree');
-
-        // Passing json with data: "function_name" : callback
-        // second arg is fancytree's element id
-        fancytreeFactory.setMethods({
-            "select": function (event, data) {
-                // You should inject required services like that
-                var ExampleService = $injector.get('ExampleService');
-                var node = data.node;
-
-                if (node.isSelected()) {
-                    ExampleService.doSomething(node.title);
-                } else {
-                    ExampleService.doSomethingElse(node.title);
-                }
-            }
-        }, 'exampleFancytree');
-    }
-
-})();
 ```
 
 * in your template (all attributes should be in lowercase
